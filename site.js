@@ -19,7 +19,6 @@
 //
 // FOR STEP 16, ADD THREE OF YOUR OWN FAVORITE MOVIES WITH METADATA TO THE END OF THE JSON FILE LIST
 */
-
 const vue_app = Vue.createApp({
   // This automatically imports your movies.json file and puts it into
   //   the variable: movies
@@ -84,11 +83,22 @@ const vue_app = Vue.createApp({
           month = "December";
           break;
       }
-      return month + ", " + dateArray[2] + ", " + dateArray[0]
+      return month + ", " + dateArray[2] + ", " + dateArray[0];
     },
     posterClick(index) {
-      var pIndex = 0;
-      
+      if (
+        this.movies[index].posterindex >=
+        this.movies[index].posters.length - 1
+      ) {
+        this.movies[index].posterindex = 0;
+      } else {
+        this.movies[index].posterindex++;
+      }
+    },
+    timeText(time) {
+      var minuteTime = time % 60;
+      var hourTime = Math.trunc(time / 60);
+      return hourTime + "h " + minuteTime + "m";
     },
   },
 });
