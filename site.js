@@ -36,16 +36,15 @@ const vue_app = Vue.createApp({
       /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
       titleTWO: "IMDB + Sergio's Top 8 movies",
       owner: "Sergio",
-      github: "https://github.com/Serg-ioE/NJIT-3",
-
-      dateArray: [],
+      github: "https://github.com/Serg-ioE/NJIT-3_StarterFiles-master",
+      /* ^^ Vue Variables above ^^ establishes variables for the title of the website, the owner of the website, and the link to the github repository with final submission */ 
     };
   },
   methods: {
     /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
     getMonthText(dateArray) {
-      let month = "";
-      switch (dateArray[1]) {
+      let month = ""; // establishes month variable that will hold the converted month in string(word) form from a number for each movie
+      switch (dateArray[1]) { // switch case checks for the number month within the dateArray parameter and switches the month variable to its string form of the corresponding month
         case 1:
           month = "January";
           break;
@@ -83,10 +82,11 @@ const vue_app = Vue.createApp({
           month = "December";
           break;
       }
-      return month + ", " + dateArray[2] + ", " + dateArray[0];
+      return month + ", " + dateArray[2] + ", " + dateArray[0]; // returns the date information in Us format (month, day, year)
     },
+    // ^^ Above Function ^^ Converts the numerical date to the date in Us format (month, day, year) for the given parameter (which is for each movie)
     posterClick(index) {
-      if (
+      if ( // If statement that checks if the posterindex has reached the end of movies.posters for the clicked movie
         this.movies[index].posterindex >=
         this.movies[index].posters.length - 1
       ) {
@@ -95,12 +95,14 @@ const vue_app = Vue.createApp({
         this.movies[index].posterindex++;
       }
     },
+    // ^^ Above Function ^^ Increments the posterindex in movies.posterindex for the clicked movie, also resets the posterindex to 0 when it has reached the greater than the length of movies.posters for the clicked movie
     timeText(time) {
-      var minuteTime = time % 60;
-      var hourTime = Math.trunc(time / 60);
-      return hourTime + "h " + minuteTime + "m";
+      var minuteTime = time % 60; // divides time by 60 then stores the remainder to minuteTime
+      var hourTime = Math.trunc(time / 60); // divides time by 60 then stores the integer part of the result in hourTime
+      return hourTime + "h " + minuteTime + "m"; // returns the newly formatted runtime for the movie
     },
+    // ^^ Above Function ^^ Converts the runtime for each movie from minutes to hours and minutes (ex: 2h 12m) based on the parameter(time)
   },
 });
 
-vue_app.mount("#vue_app");
+vue_app.mount("#vue_app"); // establishes the Vue app to the component with the id vue_app (located: index.html.body.div#vue_app)

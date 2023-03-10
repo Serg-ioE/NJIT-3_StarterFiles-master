@@ -71,7 +71,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-weight: 200;
     height: 80px;
-    border-radius: 100%;
+    border-radius: 100%; /* Shapes .score into a circle */
     line-height: 80px;
     text-align: center;
     width: 80px;
@@ -121,16 +121,21 @@ body {
 }
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+
+/* Makes like button color normally dark green */ 
 #liked{
     background-color: #008700;
 }
+/* Makes dislike button normally a dark/regular shade of red */
 #disLiked {
     background-color: #f65a5b;
 }
+/* When the like button is hovered it changes the text inside to dark green (same one used before in #liked) and changes the button color to a lighter green */
 #liked:hover {
     color:#008700;
     background-color: #9edd87;
 }
+/* When the dislike button is hovered it changes the text inside to red (same one used before in #disliked) and changes the button color to a very light red */
 #disLiked:hover {
     color: #f65a5b;
     background-color: #fdd6d6;
