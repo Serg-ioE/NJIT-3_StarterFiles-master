@@ -76,11 +76,39 @@
             "runtime": 169,
             "released": [2014, 10, 26],
             "country": "USA",
-            "posters": ["img/schindlerslist.jpg"],
+            "posters": ["img/interstellar1_500x750.jpg", "img/interstellar2_500x750.jpg", "img/interstellar3_500x750.jpg"],
             "imdb": "https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_0",
             "website": "https://en.wikipedia.org/wiki/Interstellar_(film)#:~:text=Interstellar%20premiered%20on%20October%2026,highest%20grossing%20film%20of%202014.",
             "likes": 603,
             "dislikes": 402,
+            "posterindex": 0
+      },
+      {
+            "title": "Inception",
+            "iscore": 8.8,
+            "rating": "PG-13",
+            "runtime": 148,
+            "released": [2010, 7, 13],
+            "country": "USA",
+            "posters": ["img/inception1_500x750.jpg", "img/inception2_500x750.jpg"],
+            "imdb": "https://www.imdb.com/title/tt1375666/?ref_=nv_sr_srsg_0",
+            "website": "https://en.wikipedia.org/wiki/Inception",
+            "likes": 712,
+            "dislikes": 222,
+            "posterindex": 0
+      },
+      {
+            "title": "Ant-Man and the Wasp: Quantumania",
+            "iscore": 6.5,
+            "rating": "PG-13",
+            "runtime": 124,
+            "released": [2023, 2, 17],
+            "country": "USA",
+            "posters": ["img/antman1_500x750.jpeg", "img/antman2_500x750.jpg", "img/antman3_500x750.webp"],
+            "imdb": "https://www.imdb.com/title/tt10954600/?ref_=nv_sr_srsg_1",
+            "website": "https://en.wikipedia.org/wiki/Ant-Man_and_the_Wasp:_Quantumania#:~:text=Ant%2DMan%20and%20the%20Wasp%3A%20Quantumania%20premiered%20in%20Los%20Angeles,Phase%20Five%20of%20the%20MCU.",
+            "likes": 432,
+            "dislikes": 312,
             "posterindex": 0
       }
 ]
