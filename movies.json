@@ -68,5 +68,19 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Interstellar",
+            "iscore": 8.6,
+            "rating": "PG-13",
+            "runtime": 169,
+            "released": [2014, 10, 26],
+            "country": "USA",
+            "posters": ["img/schindlerslist.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_0",
+            "website": "https://en.wikipedia.org/wiki/Interstellar_(film)#:~:text=Interstellar%20premiered%20on%20October%2026,highest%20grossing%20film%20of%202014.",
+            "likes": 603,
+            "dislikes": 402,
+            "posterindex": 0
       }
 ]
